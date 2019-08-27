@@ -10,6 +10,8 @@ import java.util.Map;
 
 public class BookNotFoundException extends RuntimeException implements GraphQLError {
 
+    private static final long serialVersionUID = -8098178273287143079L;
+    
     private Map<String, Object> extensions = new HashMap<>();
 
     public BookNotFoundException(String message, Long invalidBookId) {
